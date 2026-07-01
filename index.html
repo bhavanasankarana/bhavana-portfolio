@@ -1631,13 +1631,17 @@
       .work-grid { grid-template-columns: 1fr; }
       #work .poster-stack { min-height:340px !important; }
       #work { padding:60px 20px !important; }
-      #work > div > div { grid-template-columns:1fr !important; gap:60px !important; overflow:hidden !important; }
+      #work > div > div { grid-template-columns:1fr !important; gap:80px !important; }
       #work .section-title { font-size: clamp(20px, 6vw, 32px) !important; }
       .about-text .stats { gap: 12px; flex-wrap: wrap; justify-content:center; }
       .about-text .stats .stat-item { min-width:80px; flex:1; }
       .about-text .stats .stat-item .num { font-size:24px; }
       .about-text .stats .stat-item .desc { font-size:9px; letter-spacing:1px; }
-      .exp-scroll-wrap { display:none !important; }
+      .exp-scroll-wrap { position:relative !important; right:auto !important; top:auto !important; height:auto !important; width:100% !important; overflow-x:auto !important; overflow-y:hidden !important; margin-bottom:16px !important; display:block !important; }
+      .exp-scroll-track { flex-direction:row !important; animation:expScrollH 20s linear infinite !important; }
+      .exp-scroll-inner { flex-direction:row !important; gap:8px; padding:8px; }
+      .exp-scroll-inner img { width:90px !important; height:90px !important; object-fit:cover !important; }
+      #experience { flex-direction:column !important; }
       .section-title { font-size: clamp(20px, 6vw, 32px); }
       section { padding: 40px 20px; }
       #home { padding-top:100px; padding-bottom:40px; min-height:90vh; }
@@ -1669,6 +1673,10 @@
       #book .book-container .section-tag { justify-content:center !important; }
       .carousel-track img { height:80px !important; }
     }
+  @keyframes expScrollH {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
   </style>
 </head>
 <body>
