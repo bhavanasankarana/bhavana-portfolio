@@ -29,6 +29,10 @@
       background: #DC2626;
       color: #000;
     }
+    ::-moz-selection {
+      background: #DC2626;
+      color: #000;
+    }
 
     /* ─── NOISE TEXTURE ─── */
     body::before {
@@ -1573,11 +1577,12 @@
       .skill-slide .slide-title { font-size:clamp(24px,5vw,36px); }
       #skills > div { height:auto !important; }
       #skills .skills-outer { height:auto !important; }
-      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:40px 24px !important; }
-      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:10px 0 20px; gap:10px; }
+      #skills { margin-bottom:-16px !important; }
+      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:32px 24px !important; }
+      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:8px 0 16px; gap:8px; }
       #book h1 { font-size:32px !important; text-align:center !important; }
-      #book .book-container > div { align-items:center !important; }
-      #book .book-container > div > div:first-child { width:160px !important; align-self:center !important; }
+      #book .book-container > div:nth-child(3) { align-items:center !important; }
+      #book .book-container > div:nth-child(3) > div:first-child { width:160px !important; align-self:center !important; }
       #book .book-container .section-tag { justify-content:center !important; }
       #work > div > div { gap:40px !important; }
       .hero-title { font-size: clamp(52px, 12vw, 90px); }
@@ -1593,8 +1598,9 @@
       #skills { height:auto !important; }
       #skills > div { height:auto !important; }
       #skills .skills-outer { height:auto !important; }
-      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:60px 40px !important; }
-      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:10px 0 24px; gap:10px; }
+      #skills { margin-bottom:-20px !important; }
+      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:48px 40px !important; }
+      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:8px 0 16px; gap:8px; }
 
       .about-grid,
       .book-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -1638,10 +1644,11 @@
       section { padding: 40px 20px; }
       #home { padding-top:100px; padding-bottom:40px; min-height:90vh; }
       #experience { padding:40px 20px; }
+      #skills { margin-bottom:-20px !important; }
       #skills > div { height:auto !important; position:relative !important; }
       #skills .skills-outer { height:auto !important; }
-      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:30px 20px !important; scroll-snap-align:none; }
-      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:8px 0 16px; gap:10px; }
+      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:24px 20px !important; scroll-snap-align:none; }
+      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:6px 0 12px; gap:8px; }
 
       #talk { padding: 40px 20px 50px; }
       .talk-header .sub { font-size: 13px; }
@@ -1653,8 +1660,9 @@
       .talk-card .tc-body .tc-label { font-size: 11px; letter-spacing: 3px; }
 
       #book { height:auto !important; min-height:auto !important; padding:60px 24px !important; overflow:hidden !important; }
-      #book .book-container > div { flex-direction:column !important; gap:24px !important; align-items:center !important; }
-      #book .book-container > div > div:first-child { width:140px !important; align-self:center !important; }
+      #book .book-container { align-items:center !important; }
+      #book .book-container > div:nth-child(3) { flex-direction:column !important; gap:24px !important; align-items:center !important; }
+      #book .book-container > div:nth-child(3) > div:first-child { width:140px !important; align-self:center !important; }
       #book h1 { font-size:28px !important; text-align:center !important; }
       #book .book-container .section-tag { justify-content:center !important; }
       .carousel-track img { height:100px !important; }
