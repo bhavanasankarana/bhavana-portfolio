@@ -1571,7 +1571,10 @@
       .skill-slide .slide-icon { margin-bottom: 8px; width:44px; height:44px; font-size:20px; }
       .skill-slide .slide-scroll-hint { display: none; }
       .skill-slide .slide-title { font-size:clamp(24px,5vw,36px); }
-      .skills-dots { bottom: 40px; }
+      #skills > div { height:auto !important; }
+      #skills .skills-outer { height:auto !important; }
+      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:40px 24px !important; }
+      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:10px 0 20px; gap:10px; }
       #book h1 { font-size:32px !important; text-align:center !important; }
       #book .book-container > div { align-items:center !important; }
       #book .book-container > div > div:first-child { width:160px !important; align-self:center !important; }
@@ -1588,8 +1591,10 @@
       nav .logo span span { font-size:30px !important; }
       section { padding: 60px 24px; }
       #skills { height:auto !important; }
-      #skills > div { height:60vh !important; }
-      .skill-slide { padding:0 40px; }
+      #skills > div { height:auto !important; }
+      #skills .skills-outer { height:auto !important; }
+      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:60px 40px !important; }
+      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:10px 0 24px; gap:10px; }
 
       .about-grid,
       .book-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -1620,7 +1625,7 @@
       .hero-desc { font-size: 14px; max-width: 100%; padding: 0 10px; }
       .hero-greeting { font-size: 12px; padding: 8px 16px; }
       .work-grid { grid-template-columns: 1fr; }
-      #work > div > div { gap:48px !important; }
+      #work > div > div { gap:56px !important; }
       #work .poster-stack { min-height:340px !important; }
       #work { padding:60px 20px !important; }
       #work .section-title { font-size: clamp(20px, 6vw, 32px) !important; }
@@ -1628,13 +1633,15 @@
       .about-text .stats .stat-item { min-width:80px; flex:1; }
       .about-text .stats .stat-item .num { font-size:24px; }
       .about-text .stats .stat-item .desc { font-size:9px; letter-spacing:1px; }
-      .exp-scroll-wrap { right:20px !important; width:120px !important; }
-      .exp-scroll-inner img { width:108px !important; height:108px !important; }
+      .exp-scroll-wrap { display:none !important; }
       .section-title { font-size: clamp(20px, 6vw, 32px); }
       section { padding: 40px 20px; }
       #home { padding-top:100px; padding-bottom:40px; min-height:90vh; }
       #experience { padding:40px 20px; }
-      #skills > div { height:50vh !important; }
+      #skills > div { height:auto !important; position:relative !important; }
+      #skills .skills-outer { height:auto !important; }
+      #skills .skill-slide { height:auto !important; min-height:auto !important; padding:30px 20px !important; scroll-snap-align:none; }
+      #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:8px 0 16px; gap:10px; }
 
       #talk { padding: 40px 20px 50px; }
       .talk-header .sub { font-size: 13px; }
