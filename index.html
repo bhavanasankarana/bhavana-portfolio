@@ -1561,6 +1561,7 @@
     }
 
     @media (max-width: 768px) {
+      section { padding: 60px 24px; }
       .skill-slide { padding: 0 24px; }
       .skill-slide .slide-content { flex-direction: column; text-align: center; gap: 16px; }
       .skill-slide .slide-number { display: none; }
@@ -1570,16 +1571,26 @@
       .skill-slide .slide-icon { margin-bottom: 12px; }
       .skill-slide .slide-scroll-hint { display: none; }
       .skills-dots { bottom: 24px; }
+      #book h1 { font-size:32px !important; }
+      #book .book-container > div > div:first-child { width:160px !important; }
+      #work > div > div { gap:40px !important; }
+      .hero-title { font-size: clamp(52px, 12vw, 90px); }
     }
 
     /* ─── SOCIAL CTAs ─── */
     /* ─── RESPONSIVE ─── */
     @media (max-width: 968px) {
       nav { padding: 16px 24px; }
+      nav .logo span { font-size:15px !important; }
+      nav .logo span span { font-size:30px !important; }
       section { padding: 80px 24px; }
+      #skills { height:auto !important; }
+      #skills > div { height:60vh !important; }
+      .skill-slide { padding:0 40px; }
 
       .about-grid,
       .book-grid { grid-template-columns: 1fr; gap: 40px; }
+      #about .about-grid > div:first-child { border-right:none !important; padding-right:0 !important; justify-content:center !important; }
 
     }
 
@@ -1602,9 +1613,21 @@
       nav .nav-links.open { right: 0; }
       .menu-toggle { display: flex; }
 
-      .hero-title { font-size: 60px; letter-spacing: -2px; }
+      .hero-title { font-size: clamp(40px, 15vw, 60px); }
+      .hero-desc { font-size: 14px; max-width: 100%; padding: 0 10px; }
+      .hero-greeting { font-size: 12px; padding: 8px 16px; }
       .work-grid { grid-template-columns: 1fr; }
-      .about-text .stats { gap: 24px; flex-wrap: wrap; }
+      #work > div > div { gap:32px !important; }
+      #work .poster-stack { min-height:340px !important; }
+      #work { padding:60px 20px !important; }
+      #work .section-title { font-size: clamp(20px, 6vw, 32px) !important; }
+      .about-text .stats { gap: 12px; flex-wrap: wrap; justify-content:center; }
+      .about-text .stats .stat-item { min-width:80px; flex:1; }
+      .about-text .stats .stat-item .num { font-size:24px; }
+      .about-text .stats .stat-item .desc { font-size:9px; letter-spacing:1px; }
+      .exp-scroll-wrap { display:none !important; }
+      .section-title { font-size: clamp(20px, 6vw, 32px); }
+      section { padding: 60px 20px; }
 
       #talk { padding: 48px 20px 64px; }
       .talk-header .sub { font-size: 13px; }
@@ -1614,6 +1637,12 @@
       .talk-card .tc-icon { width: 56px; height: 56px; }
       .talk-card .tc-icon svg { width: 24px; height: 24px; }
       .talk-card .tc-body .tc-label { font-size: 11px; letter-spacing: 3px; }
+
+      #book { height:auto !important; min-height:auto !important; padding:60px 24px !important; overflow:hidden !important; }
+      #book .book-container > div { flex-direction:column !important; gap:24px !important; }
+      #book .book-container > div > div:first-child { width:140px !important; }
+      #book h1 { font-size:28px !important; }
+      .carousel-track img { height:100px !important; }
     }
   </style>
 </head>
@@ -1954,10 +1983,13 @@
         #work > div > div { grid-template-columns:1fr !important; gap:48px !important; }
         .poster-stack { min-height:400px; }
         .reels-grid video { max-height:200px; }
+        .reels-grid { gap:8px; }
       }
       @media (max-width:600px) {
-        .reels-grid { grid-template-columns:1fr 1fr; }
-        .reels-grid video { max-height:220px; }
+        .reels-grid { grid-template-columns:1fr 1fr; gap:6px; }
+        .reels-grid video { max-height:180px; }
+        .poster-stack { min-height:300px !important; }
+        .stack-card img { width:100%;height:auto; }
       }
     </style>
   </section>
