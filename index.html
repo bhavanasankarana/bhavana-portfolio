@@ -1596,7 +1596,7 @@
       #skills { height:auto !important; }
       #skills > div { height:auto !important; }
       #skills .skills-outer { height:auto !important; }
-      #skills { margin-bottom:-30px !important; }
+      #skills { margin-bottom:-60px !important; }
       #skills .skill-slide { height:auto !important; min-height:auto !important; padding:36px 40px !important; }
       #skills .skills-dots { position:relative !important; bottom:auto !important; left:auto !important; transform:none !important; justify-content:center; padding:6px 0 12px; gap:6px; }
 
@@ -1631,7 +1631,7 @@
       .work-grid { grid-template-columns: 1fr; }
       #work .poster-stack { min-height:340px !important; }
       #work { padding:60px 20px !important; }
-      #work > div > div { gap:60px !important; overflow:hidden !important; }
+      #work > div > div { grid-template-columns:1fr !important; gap:60px !important; overflow:hidden !important; }
       #work .section-title { font-size: clamp(20px, 6vw, 32px) !important; }
       .about-text .stats { gap: 12px; flex-wrap: wrap; justify-content:center; }
       .about-text .stats .stat-item { min-width:80px; flex:1; }
@@ -1642,7 +1642,8 @@
       section { padding: 40px 20px; }
       #home { padding-top:100px; padding-bottom:40px; min-height:90vh; }
       #experience { padding:40px 20px; }
-      #skills { margin-bottom:-40px !important; }
+      #skills { margin-bottom:-60px !important; }
+      #experience { padding-top:10px !important; }
       #skills > div { height:auto !important; position:relative !important; }
       #skills .skills-outer { height:auto !important; }
       #skills .skill-slide { height:auto !important; min-height:auto !important; padding:20px 20px !important; scroll-snap-align:none; }
@@ -1659,8 +1660,11 @@
 
       #book { height:auto !important; min-height:auto !important; padding:60px 24px !important; overflow:hidden !important; }
       #book .book-container { align-items:center !important; }
-      #book .book-container > div[style*="display:flex"] { flex-direction:column !important; gap:24px !important; align-items:center !important; justify-content:center !important; }
-      #book .book-container > div[style*="display:flex"] > div:first-child { width:140px !important; align-self:center !important; }
+      #book .book-container > div:nth-child(3) { flex-direction:column !important; gap:24px !important; align-items:stretch !important; width:100% !important; }
+      #book .book-container > div:nth-child(3) > div:first-child { width:140px !important; align-self:center !important; }
+      #book .book-container > div:nth-child(3) > div:last-child { flex:none !important; width:100% !important; }
+      #book .book-container > div:nth-child(3) > div:last-child > div:first-child { text-align:center !important; }
+      #book .book-container > div:nth-child(3) > div:last-child > div:first-child div { justify-content:center !important; }
       #book h1 { font-size:28px !important; text-align:center !important; }
       #book .book-container .section-tag { justify-content:center !important; }
       .carousel-track img { height:80px !important; }
