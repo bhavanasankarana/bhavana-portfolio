@@ -1561,18 +1561,21 @@
     }
 
     @media (max-width: 768px) {
-      section { padding: 60px 24px; }
+      section { padding: 40px 24px; }
       .skill-slide { padding: 0 24px; }
-      .skill-slide .slide-content { flex-direction: column; text-align: center; gap: 16px; }
+      .skill-slide .slide-content { flex-direction: column; text-align: center; gap: 12px; }
       .skill-slide .slide-number { display: none; }
-      .skill-slide .slide-desc { max-width: 100%; }
-      .skill-slide .slide-label { justify-content: center; }
+      .skill-slide .slide-desc { max-width: 100%; font-size:14px; }
+      .skill-slide .slide-label { justify-content: center; font-size:10px; }
       .skill-slide .slide-label::after { display: none; }
-      .skill-slide .slide-icon { margin-bottom: 12px; }
+      .skill-slide .slide-icon { margin-bottom: 8px; width:44px; height:44px; font-size:20px; }
       .skill-slide .slide-scroll-hint { display: none; }
-      .skills-dots { bottom: 24px; }
-      #book h1 { font-size:32px !important; }
-      #book .book-container > div > div:first-child { width:160px !important; }
+      .skill-slide .slide-title { font-size:clamp(24px,5vw,36px); }
+      .skills-dots { bottom: 40px; }
+      #book h1 { font-size:32px !important; text-align:center !important; }
+      #book .book-container > div { align-items:center !important; }
+      #book .book-container > div > div:first-child { width:160px !important; align-self:center !important; }
+      #book .book-container .section-tag { justify-content:center !important; }
       #work > div > div { gap:40px !important; }
       .hero-title { font-size: clamp(52px, 12vw, 90px); }
     }
@@ -1583,7 +1586,7 @@
       nav { padding: 16px 24px; }
       nav .logo span { font-size:15px !important; }
       nav .logo span span { font-size:30px !important; }
-      section { padding: 80px 24px; }
+      section { padding: 60px 24px; }
       #skills { height:auto !important; }
       #skills > div { height:60vh !important; }
       .skill-slide { padding:0 40px; }
@@ -1617,7 +1620,7 @@
       .hero-desc { font-size: 14px; max-width: 100%; padding: 0 10px; }
       .hero-greeting { font-size: 12px; padding: 8px 16px; }
       .work-grid { grid-template-columns: 1fr; }
-      #work > div > div { gap:32px !important; }
+      #work > div > div { gap:48px !important; }
       #work .poster-stack { min-height:340px !important; }
       #work { padding:60px 20px !important; }
       #work .section-title { font-size: clamp(20px, 6vw, 32px) !important; }
@@ -1625,11 +1628,15 @@
       .about-text .stats .stat-item { min-width:80px; flex:1; }
       .about-text .stats .stat-item .num { font-size:24px; }
       .about-text .stats .stat-item .desc { font-size:9px; letter-spacing:1px; }
-      .exp-scroll-wrap { display:none !important; }
+      .exp-scroll-wrap { right:20px !important; width:120px !important; }
+      .exp-scroll-inner img { width:108px !important; height:108px !important; }
       .section-title { font-size: clamp(20px, 6vw, 32px); }
-      section { padding: 60px 20px; }
+      section { padding: 40px 20px; }
+      #home { padding-top:100px; padding-bottom:40px; min-height:90vh; }
+      #experience { padding:40px 20px; }
+      #skills > div { height:50vh !important; }
 
-      #talk { padding: 48px 20px 64px; }
+      #talk { padding: 40px 20px 50px; }
       .talk-header .sub { font-size: 13px; }
       .talk-cards { flex-direction: column; align-items: center; }
       .talk-cards .talk-card { width: 100%; max-width: 340px; }
@@ -1639,9 +1646,10 @@
       .talk-card .tc-body .tc-label { font-size: 11px; letter-spacing: 3px; }
 
       #book { height:auto !important; min-height:auto !important; padding:60px 24px !important; overflow:hidden !important; }
-      #book .book-container > div { flex-direction:column !important; gap:24px !important; }
-      #book .book-container > div > div:first-child { width:140px !important; }
-      #book h1 { font-size:28px !important; }
+      #book .book-container > div { flex-direction:column !important; gap:24px !important; align-items:center !important; }
+      #book .book-container > div > div:first-child { width:140px !important; align-self:center !important; }
+      #book h1 { font-size:28px !important; text-align:center !important; }
+      #book .book-container .section-tag { justify-content:center !important; }
       .carousel-track img { height:100px !important; }
     }
   </style>
